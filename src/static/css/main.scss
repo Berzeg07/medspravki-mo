@@ -1,2 +1,9 @@
 @import "import/reset";
 @import "import/fonts";
+
+.container {
+    max-width: 1772px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
