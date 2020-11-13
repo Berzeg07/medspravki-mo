@@ -14,6 +14,8 @@
                 li
                     a(href="#") Контакты
 
+            button(type="button").burger
+
     .header__middle.container
         .header__column
             .logo.logo_desc
@@ -27,13 +29,13 @@
             .lissence
                 .lissence__img 
                     img(src="img/piece.png" width="60" height="60")
-                .lissence__article Лицензия департамента здравоохранения города Москвы
+                .lissence__article Лицензия департамента<br> здравоохранения города Москвы
 
         .header__column
             .centerscount
                 .centerscount__icon 
                     img(src="img/local.png" width="24" height="24") 
-                .centerscount 25 медицинских центров
+                .centerscount__article 25 медицинских центров
 
         .header__column
             .worktime
@@ -45,39 +47,42 @@
                     li Сб-Вс: с 9:00 до 20:00
 
         .header__column
-            .phonelink
+            .phonelink.header__phone
                 a(href="tel:74992291133") +7 (499) 229-11-33 
                 .phonelink__article Единый номер для записи
 
 
     .header__bottom
         .container
-            button(type="button").menubtn
-            ul.headlinks.headlinks_desc
-                li
-                    .headlinks__icon
-                        img(src="img/m-icon-1.png" width="40" height="40")
-                    a(href="#") Медицинские справки
-                li
-                    .headlinks__icon
-                        img(src="img/m-icon-2.png" width="40" height="40")
-                    a(href="#") Медкнижки
-                li
-                    .headlinks__icon
-                        img(src="img/m-icon-3.png" width="40" height="40")
-                    a(href="#") Профосмотры
-                li
-                    .headlinks__icon
-                        img(src="img/m-icon-4.png" width="40" height="40")
-                    a(href="#") Диагностика
-                li
-                    .headlinks__icon
-                        img(src="img/m-icon-5.png" width="40" height="40")
-                    a(href="#") Для организаций
-                li
-                    .headlinks__icon
-                        img(src="img/m-icon-6.png" width="40" height="40")
-                    a(href="#") Тест на COVID-19
+            .header__column
+                button(type="button").menubtn
+
+            .header__column
+                ul.headlinks.headlinks_desc
+                    li
+                        .headlinks__icon
+                            img(src="img/m-icon-1.png" width="40" height="40")
+                        a(href="#") Медицинские справки
+                    li
+                        .headlinks__icon
+                            img(src="img/m-icon-2.png" width="40" height="40")
+                        a(href="#") Медкнижки
+                    li
+                        .headlinks__icon
+                            img(src="img/m-icon-3.png" width="40" height="40")
+                        a(href="#") Профосмотры
+                    li
+                        .headlinks__icon
+                            img(src="img/m-icon-4.png" width="40" height="40")
+                        a(href="#") Диагностика
+                    li
+                        .headlinks__icon
+                            img(src="img/m-icon-5.png" width="40" height="40")
+                        a(href="#") Для организаций
+                    li
+                        .headlinks__icon
+                            img(src="img/m-icon-6.png" width="40" height="40")
+                        a(href="#") Тест на COVID-19
 
 .headermob
     .headermob__logo
@@ -88,6 +93,7 @@
         .logoarticle__sub-name медицинские справки
 
     a(href="tel:74992291133").phonemob
+        img(src="img/phone-green.png" width="34" height="34")
 
 .dropdown-mob
     ul.headlinks.headlinks_mob
@@ -130,7 +136,7 @@
 
     button(type="button").btngreen Оформить медсправку
 
-    .phonelink
+    .phonelink.phonelink_mob
         a(href="tel:74992291133") +7 (499) 229-11-33 
         .phonelink__article Единый номер для записи
 
@@ -183,77 +189,78 @@
                     a(href="#") Освобождение от физкультуры
 
 .adressblock
-    .adress-slider.swiper-container
-        .swiper-wrapper
-            .swiper-slide
-                .adress-slider__item
-                    .adress-slider__img.adress-slider__img-red
-                        img(src="img/metro-icon.png" width="24" height="24")
-                    .adress-slider__article
-                        .adress-slider__link
-                            a(href="#") Бульвар Рокоссовского
-                        .adress-slider__street ул. Ивантеевская
-                        .adress-slider__worktime Пн - Вс c 9:00 до 20:00
+    .container
+        .adress-slider.swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    .adress-slider__item
+                        .adress-slider__img.adress-slider__img-red
+                            img(src="img/metro-icon.png" width="24" height="24")
+                        .adress-slider__article
+                            .adress-slider__link
+                                a(href="#") Бульвар Рокоссовского
+                            .adress-slider__street ул. Ивантеевская
+                            .adress-slider__worktime Пн - Вс c 9:00 до 20:00
 
-            .swiper-slide
-                .adress-slider__item
-                    .adress-slider__img.adress-slider__img-green
-                        img(src="img/metro-icon.png" width="24" height="24")
-                    .adress-slider__article
-                        .adress-slider__link
-                            a(href="#") Братиславская
-                        .adress-slider__street ул. Братиславская
-                        .adress-slider__worktime Пн - Вс c 9:00 до 20:00
+                .swiper-slide
+                    .adress-slider__item
+                        .adress-slider__img.adress-slider__img-green
+                            img(src="img/metro-icon.png" width="24" height="24")
+                        .adress-slider__article
+                            .adress-slider__link
+                                a(href="#") Братиславская
+                            .adress-slider__street ул. Братиславская
+                            .adress-slider__worktime Пн - Вс c 9:00 до 20:00
 
-            .swiper-slide
-                .adress-slider__item
-                    .adress-slider__img.adress-slider__img-blue
-                        img(src="img/metro-icon.png" width="24" height="24")
-                    .adress-slider__article
-                        .adress-slider__link
-                            a(href="#") Первомайская
-                        .adress-slider__street Измайловском бульвар
-                        .adress-slider__worktime Пн - Вс c 9:00 до 20:00
+                .swiper-slide
+                    .adress-slider__item
+                        .adress-slider__img.adress-slider__img-blue
+                            img(src="img/metro-icon.png" width="24" height="24")
+                        .adress-slider__article
+                            .adress-slider__link
+                                a(href="#") Первомайская
+                            .adress-slider__street Измайловском бульвар
+                            .adress-slider__worktime Пн - Вс c 9:00 до 20:00
 
-            .swiper-slide
-                .adress-slider__item
-                    .adress-slider__img.adress-slider__img-orange
-                        img(src="img/metro-icon.png" width="24" height="24")
-                    .adress-slider__article
-                        .adress-slider__link
-                            a(href="#") Авиамоторная
-                        .adress-slider__street ул. Подъемная
-                        .adress-slider__worktime Пн - Вс c 9:00 до 20:00
+                .swiper-slide
+                    .adress-slider__item
+                        .adress-slider__img.adress-slider__img-orange
+                            img(src="img/metro-icon.png" width="24" height="24")
+                        .adress-slider__article
+                            .adress-slider__link
+                                a(href="#") Авиамоторная
+                            .adress-slider__street ул. Подъемная
+                            .adress-slider__worktime Пн - Вс c 9:00 до 20:00
 
-            .swiper-slide
-                .adress-slider__item
-                    .adress-slider__img.adress-slider__img-blue
-                        img(src="img/metro-icon.png" width="24" height="24")
-                    .adress-slider__article
-                        .adress-slider__link
-                            a(href="#") Жулебино
-                        .adress-slider__street ул. Генерала Кузнецова
-                        .adress-slider__worktime Пн - Вс c 9:00 до 20:00
+                .swiper-slide
+                    .adress-slider__item
+                        .adress-slider__img.adress-slider__img-blue
+                            img(src="img/metro-icon.png" width="24" height="24")
+                        .adress-slider__article
+                            .adress-slider__link
+                                a(href="#") Жулебино
+                            .adress-slider__street ул. Генерала Кузнецова
+                            .adress-slider__worktime Пн - Вс c 9:00 до 20:00
 
-            .swiper-slide
-                .adress-slider__item
-                    .adress-slider__img.adress-slider__img-pink
-                        img(src="img/metro-icon.png" width="24" height="24")
-                    .adress-slider__article
-                        .adress-slider__link
-                            a(href="#") Каховская
-                        .adress-slider__street ул. Малая Юшуньская
-                        .adress-slider__worktime Пн - Вс c 9:00 до 20:00
+                .swiper-slide
+                    .adress-slider__item
+                        .adress-slider__img.adress-slider__img-pink
+                            img(src="img/metro-icon.png" width="24" height="24")
+                        .adress-slider__article
+                            .adress-slider__link
+                                a(href="#") Каховская
+                            .adress-slider__street ул. Малая Юшуньская
+                            .adress-slider__worktime Пн - Вс c 9:00 до 20:00
 
-            .swiper-slide
-                .adress-slider__item
-                    .adress-slider__img.adress-slider__img-green
-                        img(src="img/metro-icon.png" width="24" height="24")
-                    .adress-slider__article
-                        .adress-slider__link
-                            a(href="#") Орехово
-                        .adress-slider__street ул. Маршала Захарова
-                        .adress-slider__worktime Пн - Вс c 9:00 до 20:00
+                .swiper-slide
+                    .adress-slider__item
+                        .adress-slider__img.adress-slider__img-green
+                            img(src="img/metro-icon.png" width="24" height="24")
+                        .adress-slider__article
+                            .adress-slider__link
+                                a(href="#") Орехово
+                            .adress-slider__street ул. Маршала Захарова
+                            .adress-slider__worktime Пн - Вс c 9:00 до 20:00
 
-        .swiper-button-next
-        .swiper-button-prev      
+            .swiper-button-next
+            .swiper-button-prev      
