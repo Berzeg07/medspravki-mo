@@ -152,7 +152,7 @@
                                 .reftable__price 2 800
 
             .show-more
-                a(href="#") Все справки для учебы
+                a(href="#") Все справки для ГИБДД
 
 
     .refinfo
@@ -199,7 +199,7 @@
                                 .reftable__price 2 800
 
             .show-more
-                a(href="#") Все справки для учебы
+                a(href="#") Все справки для работы
 
 
     .refinfo
@@ -246,7 +246,7 @@
                                 .reftable__price 2 800
 
             .show-more
-                a(href="#") Все справки для учебы
+                a(href="#") Все справки для спорта
 
     .refinfo
         .refinfo__column
@@ -292,46 +292,47 @@
                                 .reftable__price 2 800
 
             .show-more
-                a(href="#") Все справки для учебы
+                a(href="#") Все прочие справки
 
 .advantages
     h2.cont-title Преимущества
-    .advgallery.swiper-container
-        .swiper-wrapper
-            .swiper-slide 
-                .advgallery__item
-                    .advgallery__icon
-                        img(src="img/slide-1.png" width="100" height="100")
-                    .advgallery__article Более 20 лет опыта
+    .advgallery-wrap
+        .advgallery.swiper-container
+            .swiper-wrapper
+                .swiper-slide 
+                    .advgallery__item
+                        .advgallery__icon
+                            img(src="img/slide-1.png" width="100" height="100")
+                        .advgallery__article Более 20 лет опыта
 
-            .swiper-slide 
-                .advgallery__item
-                    .advgallery__icon
-                        img(src="img/slide-2.png" width="100" height="100")
-                    .advgallery__article Работа без выходных и праздничных дней
+                .swiper-slide 
+                    .advgallery__item
+                        .advgallery__icon
+                            img(src="img/slide-2.png" width="100" height="100")
+                        .advgallery__article Работа без выходных и праздничных дней
 
-            .swiper-slide 
-                .advgallery__item
-                    .advgallery__icon
-                        img(src="img/slide-3.png" width="100" height="100")
-                    .advgallery__article Удобное расположение клиник
+                .swiper-slide 
+                    .advgallery__item
+                        .advgallery__icon
+                            img(src="img/slide-3.png" width="100" height="100")
+                        .advgallery__article Удобное расположение клиник
 
-            .swiper-slide 
-                .advgallery__item
-                    .advgallery__icon
-                        img(src="img/slide-4.png" width="100" height="100")
-                    .advgallery__article Современный диагностический комплекс
+                .swiper-slide 
+                    .advgallery__item
+                        .advgallery__icon
+                            img(src="img/slide-4.png" width="100" height="100")
+                        .advgallery__article Современный диагностический комплекс
 
-            .swiper-slide 
-                .advgallery__item
-                    .advgallery__icon
-                        img(src="img/slide-5.png" width="100" height="100")
-                    .advgallery__article Проводим осмотры на выезде
+                .swiper-slide 
+                    .advgallery__item
+                        .advgallery__icon
+                            img(src="img/slide-5.png" width="100" height="100")
+                        .advgallery__article Проводим осмотры на выезде
 
-        .swiper-pagination
+            .swiper-pagination
 
-        .swiper-button-next
-        .swiper-button-prev
+        .swiper-button-next.swiper-button-next-adv
+        .swiper-button-prev.swiper-button-prev-adv
 
 .aboutrefs.container
     .aboutrefs__column
@@ -344,9 +345,9 @@
             p Медицинская справка является официальным документом, содержащим краткую информацию о состоянии здоровья человека, в том числе сведения о перенесённых заболеваниях и прививках. Мед справки необходимы при поступлении на работу или учебу, для посещения бассейна и спортивных секций, для получения или замены водительского удостоверения и ещё в целом ряде случаев.
             p Выдаются такие справки в медицинских учреждениях после прохождения врачебной комиссии. Чаще всего это поликлиники по месту жительства, хотя в последнее время данная услуга стала весьма востребованной в коммерческих клиниках. Документ оформляется на бланках установленного образца, его подлинность подтверждается печатью врача и штампом учреждения.
 
-        button(type="button").btngreen Оформить медсправку
+        button(type="button").btngreen.aboutrefs__btn Оформить медсправку
 
-.priceinfo
+.priceinfo.container
     h2.cont-title Цены
 
     table.pricetable
@@ -360,7 +361,8 @@
         tbody 
             tr
                 td 
-                    .pricetable__link Справка для работы и учебы 086/У
+                    .pricetable__link 
+                        a(href="#") Справка для работы и учебы 086/У
                 td
                     .pricetable__hidden № формы
                     .pricetable__txt 302-Н
@@ -380,7 +382,8 @@
 
             tr
                 td 
-                    .pricetable__link Медицинская справка для госслужбы 001-ГС/У
+                    .pricetable__link 
+                        a(href="#") Медицинская справка для госслужбы 001-ГС/У
                 td
                     .pricetable__hidden № формы
                     .pricetable__txt 003-В/у
@@ -400,7 +403,8 @@
 
             tr
                 td 
-                    .pricetable__link Медицинская справка для работы с гостайной (форма 989н)
+                    .pricetable__link 
+                        a(href="#") Медицинская справка для работы с гостайной (форма 989н)
                 td
                     .pricetable__hidden № формы
                     .pricetable__txt 302-Н
@@ -420,7 +424,8 @@
 
             tr
                 td 
-                    .pricetable__link Справка для работы и учебы 086/У
+                    .pricetable__link 
+                        a(href="#") Справка для работы и учебы 086/У
                 td
                     .pricetable__hidden № формы
                     .pricetable__txt 302-Н
@@ -460,71 +465,78 @@
             a(href="#") Справка для категорий С, С1, D, D1, CE, C1E, D1E, DE, Tm, Tb (003-в/у)
         li
             a(href="#") Справка для международных водительских прав
+.container
+    .formblock
+        .formblock__column
+            .formblock__img
+                img(src="img/docs.jpg")
 
-.formblock
-    .formblock__column
-        .formblock__img
-            img(src="img/docs.png")
+        .formblock__column 
+            form.formloan(action="#")
+                .formloan__title Отправьте заявку - любая справка через 30 минут!
 
-    .formblock__column 
-        form.formloan(action="#")
-            .formloan__title Отправьте заявку - любая справка через 30 минут!
+                .formblock__img-mob
+                    img(src="img/docs-mob.jpg")
 
-            .formloan__top
-                input(type="text" placeholder="Ваше имя").inp.inp_name
-                input(type="text" placeholder="Контактный телефон").inp.inp_phone
+                .formloan__top
+                    .formloan__block
+                        input(type="text" placeholder="Ваше имя").inp.inp_name
+                        input(type="text" placeholder="Контактный телефон").inp.inp_phone
 
-                .selectform
-                    select
-                        option Справка для категорий А, А1, В, В1, М, ВЕ (003-в/у)
-                        option Test 1
-                        option Test 2
+                    .formloan__block
+                        .selectform
+                            select
+                                option Справка для категорий А, А1, В, В1, М, ВЕ (003-в/у)
+                                option Test 1
+                                option Test 2
 
-                .selectform
-                    select
-                        option Выберите ближайший филиал
-                        option Test 1
-                        option Test 2
+                        .selectform
+                            select
+                                option Выберите ближайший филиал
+                                option Test 1
+                                option Test 2
 
-            .formloan__bottom
-                button(type="button").formloan__btn Отправить заявку
-
-                .privacy Нажимая на кнопку «Отправить заявку», вы принимаете условия 
-                    a(href="#") передачи и обработки информации
+                .formloan__bottom
+                    .formloan__block
+                        button(type="button").formloan__btn Отправить заявку
+                    .formloan__block
+                        .privacy Нажимая на кнопку «Отправить заявку», вы принимаете условия 
+                            a(href="#") передачи и обработки информации
 
 .ourlisence.container
     h2.cont-title Наши лицензии
 
-    .ourlisence-slider.swiper-container
-        .swiper-wrapper
-            .swiper-slide
-                .ourlisence-slider__img
-                    img(src="img/lis.jpg")
+    .ourlisence-slider-wrap
+        .ourlisence-slider.swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    .ourlisence-slider__img
+                        img(src="img/lis.jpg")
 
-            .swiper-slide
-                .ourlisence-slider__img
-                    img(src="img/lis.jpg")
+                .swiper-slide
+                    .ourlisence-slider__img
+                        img(src="img/lis.jpg")
 
-            .swiper-slide
-                .ourlisence-slider__img
-                    img(src="img/lis.jpg")
+                .swiper-slide
+                    .ourlisence-slider__img
+                        img(src="img/lis.jpg")
 
-            .swiper-slide
-                .ourlisence-slider__img
-                    img(src="img/lis.jpg")
+                .swiper-slide
+                    .ourlisence-slider__img
+                        img(src="img/lis.jpg")
 
-            .swiper-slide
-                .ourlisence-slider__img
-                    img(src="img/lis.jpg")
+                .swiper-slide
+                    .ourlisence-slider__img
+                        img(src="img/lis.jpg")
 
-            .swiper-slide
-                .ourlisence-slider__img
-                    img(src="img/lis.jpg")
+                .swiper-slide
+                    .ourlisence-slider__img
+                        img(src="img/lis.jpg")
 
-        .swiper-pagination
+            .swiper-pagination
 
-        .swiper-button-next
-        .swiper-button-prev
+        .swiper-button-next.swiper-button-next-n
+        .swiper-button-prev.swiper-button-next-p
 
 
 
